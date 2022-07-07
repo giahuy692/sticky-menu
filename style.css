@@ -1,0 +1,35 @@
+#vmenu {
+    border: 1px solid green;
+    overflow: hidden;
+    position: relative;
+    padding: 5%;
+  }
+  #vmenu section {
+    position: relative;
+    margin-top: 10%;
+    transition: top 0.5s;
+  }
+  #vmenu section div {
+    float: left;
+    display: inline-block;
+    padding: 0; margin: 0;
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+  #vmenu section div.active { 
+    transform: scale(1.2);
+  }
+  #vmenu section div a {
+    text-align: center;
+    background: #ddd;
+    box-shadow: 0 0 1em #444;
+    border-radius: 1em;
+    display: block;
+    width: 60%; height: 60%;
+    padding: 10%;
+    margin: 10%;
+  }
+  #vmenu section div.active a { 
+    background: #ccc;
+    box-shadow: 0 0 1em;  
+  }
